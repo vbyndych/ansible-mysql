@@ -6,7 +6,7 @@ Special role to install mysql and setup one database
 Requirements
 ------------
 
-Require python-mysqldb library to be installed on the host
+Require **python-apt** and **python-mysqldb** library to be installed on the host
 
 Role Variables
 --------------
