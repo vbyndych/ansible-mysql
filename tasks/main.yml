@@ -1,0 +1,10 @@
+---
+- name: Install MySQL
+  sudo: true
+  apt: pkg=mysql-server-5.5 state=present
+
+- name: Create Database
+  mysql_db: name="{{ mysql.dbname }}" collation=utf8_general_ci state=present
+
+- name: Create MySQL user
+  mysql_user: name="{{ mysql.username }}" password="{{ mysql.password }}" priv="{{ mysql.dbname }}.*:ALL" state=present

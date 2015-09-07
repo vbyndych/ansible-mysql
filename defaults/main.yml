@@ -1,0 +1,5 @@
+---
+mysql:
+  username: root
+  password: toor
+  dbname: test

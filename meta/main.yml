@@ -1,0 +1,14 @@
+---
+galaxy_info:
+  author: Vlad Byndych
+  description: Install and configure mysql with one database
+  license: MIT
+  min_ansible_version: 1.2
+  - name: Ubuntu
+    versions:
+    - all
+  categories:
+  - database
+  - database:sql
+dependencies: []
+  
